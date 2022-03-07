@@ -1,5 +1,5 @@
 
-resource "aws_s3_bucket" "s3bucket" {
+resource "aws_s3_bucket" "b" {
   bucket = "naga111"
 
   tags = {
@@ -8,7 +8,3 @@ resource "aws_s3_bucket" "s3bucket" {
   }
 }
 
-resource "aws_s3_bucket_acl" "example" {
-  bucket = s3bucket
-  acl    = "private"
-}
