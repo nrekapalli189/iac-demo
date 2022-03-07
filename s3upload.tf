@@ -1,10 +1,6 @@
-
-resource "aws_s3_bucket" "b" {
+resource "aws_s3_bucket" "my_bucket" {
   bucket = "naga111"
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
+
 }
 
