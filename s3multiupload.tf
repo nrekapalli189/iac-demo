@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "naga5893"
+resource "aws_s3_bucket" "s3" {
+  bucket = "naga123"
 
   tags = {
     Name        = "My bucket"
@@ -8,6 +8,6 @@ resource "aws_s3_bucket" "b" {
 }
 
 resource "aws_s3_bucket_acl" "example" {
-  bucket = aws_s3_bucket.b.id
+  bucket = aws_s3_bucket.s3.id
   acl    = "private"
 }
